@@ -105,7 +105,7 @@ public class PhonebookDao {
 				String company = rs.getString("company");
 				
 				PersonVo personVo = new PersonVo(id,name,hp,company); 
-				System.out.println(personVo);
+//				System.out.println(personVo);
 				
 				personList.add(personVo);
 				
