@@ -14,6 +14,17 @@ public class PersonVo {
 		super();
 	}
 	
+	public PersonVo(int personId) {
+		this.personId = personId;
+	}
+	
+	public PersonVo(String name,String hp, String company) {
+		super();
+		this.name=name;
+		this.hp=hp;
+		this.company=company;
+	}
+	
 	public PersonVo(int personId, String name, String hp, String company) {
 		super();
 		this.personId = personId;

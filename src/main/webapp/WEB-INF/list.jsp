@@ -44,8 +44,8 @@
 					<td><%= personList.get(i).getCompany() %></td>
 				</tr>
 				<tr>
-					<td>[ 수정폼으로 이동 ]</td>
-					<td>[ 삭제 ]</td>
+					<td><a href="http://localhost:8088/phonebook2/pbcontroller?action=editform&no=<%= personList.get(i).getPersonId() %>">[ 수정폼으로 이동 ]<a></td>
+					<td><a href="http://localhost:8088/phonebook2/pbcontroller?action=delete&no=<%= personList.get(i).getPersonId() %>">[ 삭제 ]</a></td>
 				</tr>
 			</tbody>
 		</table>
@@ -53,7 +53,7 @@
 		<%} %>
 		
 		<br>
-		<a href="#">등록폼으로 이동</a>
+		<a href="http://localhost:8088/phonebook2/pbcontroller?action=writeform">등록폼으로 이동</a>
 	</body>
 	
 </html>
